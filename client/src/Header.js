@@ -12,7 +12,7 @@ header={
     <h1 className="Header_title">React Instant Chat Messenger</h1>
     <img src={logo} className="logo" alt="" width="100px" />
     <br />
-    <Link to="/"><h5 className="header-link">Chat Login</h5></Link>
+    <Link to="/login"><h5 className="header-link">Chat Login</h5></Link>
     <br />
     <Link to="/chat"><h5 className="header-link">Chat</h5></Link> 
     <br />

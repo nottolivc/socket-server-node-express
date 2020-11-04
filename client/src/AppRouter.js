@@ -11,6 +11,7 @@ const AppRouter = () => {
       <Switch>
         <Route exact path="/" component={App} />
         <Route exact path="/chat" component={ChatApp} />
+        <Route exact path="/login" component={App} />
       </Switch>
       </>
 )

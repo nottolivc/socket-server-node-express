@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import ChatApp from './ChatApp';
-// import Header from "./Header";
+import { Redirect } from "react-router-dom";
 
 
 class App extends React.Component {
@@ -27,7 +27,11 @@ class App extends React.Component {
     if (this.state.submitted) {
       // Form was submitted, now show the main App
       return (
-        <ChatApp username={this.state.username} />
+        <>
+        <Redirect to="/chat">
+          <ChatApp username={this.state.username} />
+        </Redirect>
+        </>
       );
     }
 
