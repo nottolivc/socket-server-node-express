@@ -1,4 +1,4 @@
 
 export default {
-  api: 'http://localhost:4000'
+  api: 'https://tranquil-falls-55208.herokuapp.com'
 }
