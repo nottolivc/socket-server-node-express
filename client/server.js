@@ -42,8 +42,8 @@ app.get('/', (req, res) => {
 });
 
 // Start listening
-const PORT = 4001
-server.listen(process.env.PORT || 4001);
+const PORT = 4000
+server.listen(process.env.PORT || 4000);
 console.log(`Started on port ${PORT}`);
 // Setup socket.io
 socketIo.on('connection', socket => {
