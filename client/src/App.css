@@ -4,13 +4,44 @@
 
 body {
   font-family: 'proxima-nova', sans-serif;
-  margin: 0;
+  margin: 0 auto;
 }
 
 html, body, #app, .container {
   min-height: 100vh;
   max-height: 100vh;
   max-width: 100%;
+}
+
+h1 {
+  display: flex;
+  text-align: center;
+  font-size: 2.4rem;
+  color: #222;
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px; 
+  margin: 0.5rem auto;
+  text-decoration: none;
+}
+
+h4 {
+  margin-top: 100px;
+  display: flex;
+  text-align: center;
+  font-size: 1.6rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px; 
+  color: #333;
+}
+
+.logo {
+  display:flex;
+  text-align:center;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 input[type="text"] {
@@ -51,12 +82,13 @@ input[type="submit"] {
   -moz-box-shadow: -7px 7px 0px rgba(50,50,50,0.15);
   box-shadow: -7px 7px 0px rgba(50,50,50,0.15);
   margin-top: 20px;
+  border-radius: 4px;
 }
 
 input[type="submit"]:hover {
   /* -webkit-box-shadow: -10px 10px 0px rgba(50,50,50,0.15);
   -moz-box-shadow: -10px 10px 0px rgba(50,50,50,0.15); */
-  box-shadow: -10px 10px 0px #aaa;
+  box-shadow: -4px 4px 0px #aaa;
   background-color: #aaa;
 }
 
@@ -66,6 +98,7 @@ input[type="submit"]:hover {
 }
 
 .messages {
+  margin-top: 26vh;
   overflow-y: scroll;
   overflow-x: hidden;
   flex-grow: 1;
@@ -86,12 +119,15 @@ h3 {
   overflow: hidden;
   padding: 0 40px;
   flex-shrink: 0;
+  background: #aaa;
 }
 
 .chat-input input[type="text"] {
   width: 100%;
   margin-left: -20px;
   margin-right: -20px;
+  background: whitesmoke;
+  border-radius: 8px;
 }
 
 .message.from-me .username {
@@ -138,4 +174,26 @@ h3 {
 
 h1 {
   display: block;
+}
+
+.Header_title {
+  background:#222;
+  color:  rgb(65, 216, 166);
+  padding: 5px;
+  width: 100%;
+}
+
+header {
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+  0 2px 4px rgba(0, 0, 0, 0.24);
+  /* opacity:0.95; */
+  z-index:0;
+}
+.header-link {
+  text-decoration: none;
+  color: #aaa;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }

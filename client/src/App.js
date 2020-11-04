@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import ChatApp from './ChatApp';
+// import Header from "./Header";
+
 
 class App extends React.Component {
   
@@ -31,17 +33,27 @@ class App extends React.Component {
 
     // Initial page load, show a simple login form
     return (
+      <>
+      <div>
       <form onSubmit={this.usernameSubmitHandler} className="username-container">
-        <h1>React Private Chat</h1>
+      <br />
+      <br />
+      <br />
+      <br />
+      <h4>Welcome</h4>
+      <h5>Enter Your Username</h5>
+      <br />
         <div>
           <input
             type="text"
             onChange={this.usernameChangeHandler}
-            placeholder="Enter your chatroom username..."
+            placeholder="Enter username..."
             required />
         </div>
         <input type="submit" value="Submit" />
       </form>
+      </div>
+      </>
     );
   }
 
