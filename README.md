@@ -1,6 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 Web sockets API deployed on heroku here: https://tranquil-falls-55208.herokuapp.com
 
+## Basic UI
+![Preview](React-chat.png?raw=true)
+
+
 ## Available Scripts
 In the project directory, you can run:
 
